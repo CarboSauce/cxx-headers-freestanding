@@ -1061,7 +1061,9 @@ _GLIBCXX_END_NAMESPACE_CONTAINER
   inline _GLIBCXX_CONSTEXPR long long
   __size_to_integer(double __n) { return (long long)__n; }
   inline _GLIBCXX_CONSTEXPR long long
+#ifndef __clang__
   __size_to_integer(long double __n) { return (long long)__n; }
+#endif
 #ifdef _GLIBCXX_USE_FLOAT128
   __extension__ inline _GLIBCXX_CONSTEXPR long long
   __size_to_integer(__float128 __n) { return (long long)__n; }
