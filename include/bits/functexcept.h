@@ -84,7 +84,7 @@ namespace std _GLIBCXX_VISIBILITY(default)
 {
 _GLIBCXX_BEGIN_NAMESPACE_VERSION
   [[noreturn]] inline void
-  __throw_bad_function_call() { std::terminate(); }
+  __throw_bad_function_call() { std::__terminate(); }
 }
 #endif // HOSTED
 

@@ -71,12 +71,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #else
   [[noreturn]] inline void __throw_bad_alloc(void) 
   {
-     std::terminate();
+     std::__terminate();
   }
 
   [[noreturn]] inline void __throw_bad_array_new_length(void)
   {
-     std::terminate();
+     std::__terminate();
   }
 #endif // HOSTED
 
