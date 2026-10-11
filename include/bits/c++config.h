@@ -831,7 +831,7 @@ __glibcxx_assert_fail() {}
 /* For powerpc64 don't use __float128 when it's the same type as long double. */
 #if !(defined(_GLIBCXX_LONG_DOUBLE_ALT128_COMPAT) &&                           \
       defined(__LONG_DOUBLE_IEEE128__))
-#define _GLIBCXX_USE_FLOAT128 1
+/* #define _GLIBCXX_USE_FLOAT128 1 */
 #endif
 #endif
 
@@ -1214,7 +1214,7 @@ typedef __decltype(0.0bf16) __bfloat16_t;
 /* #undef _GLIBCXX_HAVE_MACHINE_PARAM_H */
 
 /* Define if mbstate_t exists in wchar.h. */
-#define _GLIBCXX_HAVE_MBSTATE_T 1
+/* #define _GLIBCXX_HAVE_MBSTATE_T 1 */
 
 /* Define to 1 if you have the `memalign' function. */
 /* #undef _GLIBCXX_HAVE_MEMALIGN */
